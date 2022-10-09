@@ -2,45 +2,73 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--footer-clr);
-  }
-  .footer__container{
-    display: flex;
-    align-items: baseline;
-  }
-  .footer__info{
-    margin-right: 70px;
-  }
-  .footer__address {
-    margin-bottom: 9px;
-    margin-top: 20px;
-    color: var(--background-color);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.7;
-  }
-  
-  .footer__link{
-    margin: 0;
-    line-height: 1.7;
-    color: var(--background-color);
-    color: rgba(255, 255, 255, 0.6);
-    transition: var(--transition-duration);
 
-    &:hover,
-    &:focus
-  {
-    color: var(--accent-color);
-  }
-}
+    &__container{
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+      }
 
+      @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+      }
+    }
+    &__info{
+      margin-right: 70px;
+    }
+    &__address {
+      margin-bottom: 9px;
+      margin-top: 20px;
+      color: var(--background-color);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.7;
+
+      @media screen and (min-width: 1200px) {
+        text-align: start;
+      }
+    }
+    
+    &__link{
+      line-height: 1.7;
+      color: var(--background-color);
+      color: rgba(255, 255, 255, 0.6);
+      transition: var(--transition-duration);
   
-  
-  .footer__list .footer__item+.footer__item{
-    margin-top: 9px;
+      &:hover,
+      &:focus
+    {
+      color: var(--accent-color);
+    }
   }
-  .footer__list
-  {
-    padding: 0;
-    margin: 0;
-    transition: color var(--transition-duration);
+  
+    
+    
+   &__list &__item+&__item{
+      margin-bottom: 9px;
+
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 8px;
+      }
+
+    }
+    &__list
+    {
+      margin-bottom: 60px;
+      text-align: center;
+      transition: color var(--transition-duration);
+
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .socials__section {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
   }

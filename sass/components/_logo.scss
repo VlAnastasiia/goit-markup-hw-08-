@@ -6,6 +6,25 @@
   font-size: 26px;
   line-height: 1.20;
 
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    margin-right: 93px;
+  }
+
   &-dark {
     color: var(--logo-color);
     font-family: 'Raleway', sans-serif;

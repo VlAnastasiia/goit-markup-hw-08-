@@ -2,9 +2,14 @@
     margin-bottom: 20px;
     font-weight: 700;
     line-height: 1.14;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: var(--background-color);
+
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
   }
   .socials__footer{
     display: flex;
