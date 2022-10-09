@@ -1,0 +1,26 @@
+.section.hero__section {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px 0;
+    background-color: #2f303a;
+    text-align: center;
+    height: 600px;
+    max-width: 1600px;
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/header/Img.jpg); 
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 696px;
+    color: var(--background-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }

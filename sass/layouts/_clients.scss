@@ -1,0 +1,38 @@
+.section-title.clients{
+    margin-bottom: 50px;
+  }
+  .client__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+    transition: color var(--transition-duration), border-color var(--transition-duration);
+  
+    &:hover,
+    &:focus
+    {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+    &:hover .client__icon,
+    &:focus .client__icon{
+      fill: var(--accent-color);
+    }
+}
+  .clients__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .client__icon
+  {
+    fill: currentColor;
+  }
+  
+ 

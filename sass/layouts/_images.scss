@@ -1,0 +1,46 @@
+.image__title
+{
+    margin: 0;
+    text-align: center;
+    color: var(--title-text-color);
+    font-size: 36px;
+    line-height: 1.16;
+}
+
+.section.images__section .images__list
+{
+  margin: 0;
+  margin-top: 50px;
+}
+.images__list
+{
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.img__html+.img__html
+{
+  margin-left: 30px;
+}
+.thumb
+{
+  position: relative;
+}
+
+.thumb__text
+{
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--background-color);
+  text-transform: uppercase;
+}
